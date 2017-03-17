@@ -4,8 +4,13 @@ html {
   color: white;
 }
 
-h5 {
-  color: black;
+.center {
+  width: 960px;
+}
+
+h6 {
+  width: 100%;
+  text-align: center;
 }
 
 .title h1 {
@@ -19,70 +24,71 @@ h5 {
   margin-top: 0.42rem;
   width: auto;
 }
-.center {
-  width: 960px;
-}
+
 .title,
 .new-arrival,
 .navbar,
-.featured-items {
+.featured-items,
+.store-info,
+footer {
   justify-content: center;
 }
 
-.featured-items .center {
+.featured-items .center,
+.store-info .center,
+nav .center {
   justify-content: space-between;
+}
+
+
+.store-info {
+  margin-top: 3rem;
 }
 
 .new-arrival {
   background-image: url('../../resources/images/moto.jpeg');
   background-size: cover;
-
   height: 25rem;
   display: flex;
+  align-items: center;
 }
 
 .text-box {
   width: 20rem;
   margin-top: 9rem;
   font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
 }
 
 .text-box h2 {
   font-size: 1rem;
-  padding-top: 2rem;
-  padding-left: 3rem;
+  margin-bottom: 0.25rem;
 }
 
 .text-box h3 {
   font-size: 2rem;
-  padding-left: 3rem;
 }
 
 .navbar {
   background-color: firebrick;
 }
 
-nav li {
-  display: inline-flex;
-  padding: 0.75rem;
+nav .center{
+  display: flex;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 /* all black bacground items */
 .title,
 .text-box,
-.featured p,
+.featured h6,
 footer {
   background-color: black;
-  border: 1px solid blue;
 }
 
-nav {
-  border: 1px solid yellow;
-}
-
-.center {
-  border: 2px dotted red;
-}
 
 /* all flex containers */
 .center,
@@ -91,8 +97,10 @@ nav {
 .logo,
 .featured-items,
 .featured,
+.image-container,
 .store-info,
-.navbar {
+.navbar,
+footer {
   display: flex;
 }
 
@@ -102,21 +110,53 @@ nav {
 .featured-items,
 .featured,
 .store-info {
-    border: 1px solid blue;}
+    /*border: 1px solid blue;*/
+  }
+
+.featured-items {
+  margin-top: 3rem;
+}
 
 .featured {
-  border: 2px solid black;
+  border: 4px solid black;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   width: 30%;
 }
 
-.featured img {
-  height: 9rem;
-  width: auto;
+.image-container img {
+  max-height: 9rem;
+  max-width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
+/* make an alternate features items using backgroung images */
+
+h6 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
 #location h4,
 #hours h4 {
   background-color: black;
+  padding: 1rem 2rem;
+}
+
+#location,
+#hours {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+
+h5 {
+  color: black;
+}
+
+footer {
+  height: 5rem;
+  text-align: left;
+  align-items: center;
 }
