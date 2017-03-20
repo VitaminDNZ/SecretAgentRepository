@@ -160,3 +160,83 @@ footer {
   text-align: left;
   align-items: center;
 }
+
+#small-nav-item {
+  display: none;
+}
+/* First media query for tablet size width*/
+
+@media only screen and (max-width: 1024px) {
+
+  body {
+    max-width: 960px;
+  }
+
+  #small-nav-item {
+    display: inline-flex;
+  }
+
+  nav .center {
+    justify-content: center;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .featured {
+    width: 47%;
+  }
+
+  .featured-items {
+    align-items: space-around;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+  .new-arrival {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .text-box {
+    margin-top: 10rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  .text-box h2 {
+    font-size: 0.77rem;
+  }
+
+  .text-box h3 {
+    font-size: 1rem;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .featured {
+    width: 90%;
+  }
+
+  .store-info .center {
+    flex-direction: column;
+  }
+  #location,
+  #hours {
+    width: 90%;
+  }
+
+  #location {
+    margin-bottom: 0.5rem;
+  }
+}
